@@ -1,4 +1,4 @@
-# CPU Boot Process — From Power-On to OS Loading
+# CPU Boot Process ~ From Power-On to OS Loading
 
 ## 1. Power-On & CPU Reset
 - **Power button pressed** → Power supply (PSU) stabilizes voltage.
