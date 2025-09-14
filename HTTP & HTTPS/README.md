@@ -58,6 +58,34 @@ Here’s the key rule of RSA-style encryption:
 - Data encrypted with a **public key** can only be decrypted with the **private key**.  
 - Data encrypted with a **private key** can be verified (decrypted) with the **public key** (used for digital signatures).  
 
+####How TLS Uses HTTPS in a Handshake?
+
+Here’s how the process happens when you visit a secure website:
+
+🔑 Step 1 – Server shares its public key
+
+The client connects and receives the server’s public key as part of its SSL certificate.
+
+🔑 Step 2 – Client generates a session key
+
+The client randomly generates a symmetric session key, which will be used for encrypting all further communication.
+
+🔑 Step 3 – Client encrypts session key
+
+The client encrypts the session key using the server’s public key and sends it to the server.
+
+🔑 Step 4 – Server decrypts session key
+
+The server uses its private key to decrypt the session key.
+
+🔑 Step 5 – Both sides use the session key
+
+Both the client and server now use this shared symmetric key to encrypt the rest of the communication, which is fast and efficient.
+
+🔑 Step 6 – Authentication and trust
+
+The server’s certificate, issued by a trusted Certificate Authority (CA), ensures the client is connecting to the right server and not an imposter.
+
 ### TLS Handshake Step-by-Step
 
 During the HTTPS/TLS handshake:  
