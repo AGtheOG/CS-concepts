@@ -58,7 +58,7 @@ Here’s the key rule of RSA-style encryption:
 - Data encrypted with a **public key** can only be decrypted with the **private key**.  
 - Data encrypted with a **private key** can be verified (decrypted) with the **public key** (used for digital signatures).  
 
-####How TLS Uses HTTPS in a Handshake?
+## How TLS Uses HTTPS in a Handshake?
 
 Here’s how the process happens when you visit a secure website:
 
